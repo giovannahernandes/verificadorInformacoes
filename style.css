@@ -15,6 +15,7 @@ padding: 0;
 }
 
 .cabecalho{
+    color: #FF1493;
 padding: 15px 25px;
 display: flex;
 justify-content: space-between;
@@ -30,4 +31,23 @@ height: 200px;
 .cartao-imagem{
     width: 100%;
 
+}
+
+.cartao-interno{
+    position: relative;
+
+}
+
+.cartao-frente, .cartao-verso{
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+
+}
+
+.cartao-verso{
+
+    transform: rotateY(180deg);
+    
 }
